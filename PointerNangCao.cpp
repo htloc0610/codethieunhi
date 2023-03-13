@@ -3,17 +3,17 @@
 #include<stdlib.h>
 using namespace std;
 
-struct SOPHUC{
+struct SOPHUC {
 	float phanthuc;
 	float phanao;
-	
+
 };
 istream& operator>>(istream& inDEV, SOPHUC& a) {
 	inDEV >> a.phanthuc >> a.phanao;
 	return inDEV;
 }
 ostream& operator<<(ostream& outDEV, SOPHUC& a) {
-	outDEV << a.phanthuc <<" + "<< a.phanao<<"i";
+	outDEV << a.phanthuc << " + " << a.phanao << "i";
 	return outDEV;
 }
 
@@ -118,8 +118,7 @@ void* arrPopBack(void** aData) {
 }
 
 void SoPhucArrOut(SOPHUC* a) {
-	SOPHUC* tmp = (SOPHUC*)data_addr(a);
-	tmp--;
+	SOPHUC* tmp = (SOPHUC*)data_addr(origin_addr(a));
 	for (int i = 0; i < arrSize(a); i++) {
 		cout << "So phuc " << i << ": " << tmp[i] << endl;
 	}
