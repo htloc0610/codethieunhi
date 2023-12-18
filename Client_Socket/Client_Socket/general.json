@@ -1,0 +1,8 @@
+{
+  "username": "Nhom muoi ba <nhom13@gmail.com>",
+  "password": "123123",
+  "mailserver": "127.0.0.1",
+  "SMTP": 2225,
+  "POP3": 3335,
+  "autoload": 20
+}

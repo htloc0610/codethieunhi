@@ -1,0 +1,22 @@
+{
+  "project": {
+    "from": ["boss@gmail.com"],
+    "subject": [],
+    "content": []
+  },
+  "important": {
+    "from": [],
+    "subject": ["urgent"],
+    "content": []
+  },
+  "work": {
+    "from": [],
+    "subject": [],
+    "content": ["reporting"]
+  },
+  "spam": {
+    "from": [],
+    "subject": ["virus", "hack"],
+    "content": ["virus", "hack"]
+  }
+}
